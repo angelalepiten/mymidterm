@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", serif;
+  background-color: #f7f1e1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3c3c3c;
+  padding: 20px;
+}
+
+.register-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff4e6; 
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #8d6e63; 
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px; 
+}
+
+
+.input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.input-wrapper div {
+  width: 100%;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #8d6e63; 
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f4f1e1; 
+  color: #3c3c3c;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #d2a679; 
+  background-color: #fff;
+  outline: none;
+}
+
+button {
+  background-color: #d2a679; 
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b78855; 
+}
+
+label {
+  font-size: 14px;
+  color: #6f4f37; 
+  margin-bottom: 5px;
+  display: block;
+}
+
+p {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+
+a {
+  color: #8d6e63; 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #d2a679; 
+}
+
+.error-message,
+.success-message {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+
+@media (max-width: 768px) {
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  .input-wrapper div {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .register-container {
+    padding: 40px;
+    max-width: 700px;
+  }
+}

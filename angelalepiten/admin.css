@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Montserrat", serif;
+    background-color: #f4f1e1;
+    color: #4e4a3f; 
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.admin-h1 {
+    font-size: 2em;
+    color: #4e4a3f;
+    margin-bottom: 20px;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+.admin-cart {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.admin-cart a {
+    color: #8d6748;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.admin-cart a:hover {
+    text-decoration: underline;
+}
+
+
+.admin-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 1px solid #e2cfc1; 
+}
+
+.admin-form input[type="text"],
+.admin-form textarea,
+.admin-form input[type="number"],
+.admin-form select,
+.admin-form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #e2cfc1; 
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f0e1; 
+}
+
+.admin-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6b4f31; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-form button:hover {
+    background-color: #8d6748; 
+}
+
+/* Table Styles */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2cfc1; 
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 15px;
+    text-align: left;
+    color: #4e4a3f;
+}
+
+.admin-table th {
+    background-color: #6b4f31; 
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.admin-table td {
+    border-bottom: 1px solid #e2cfc1;
+}
+
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.admin-product-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 2px solid #e2cfc1; 
+}
+
+.admin-actions form {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.admin-actions button {
+    background-color: #b64e36; 
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.admin-actions button:hover {
+    background-color: #9d3f2a;
+}
+
+@media (max-width: 768px) {
+    .admin-form,
+    .admin-table {
+        padding: 10px;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 10px;
+    }
+}
